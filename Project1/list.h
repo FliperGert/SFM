@@ -41,7 +41,7 @@ public:
 	Node<T>* getTail() const { return tail; }
 
 	void push_back(T data) {
-		Node<T> node(data);
+		Node<T>* node = new Node(data);
 		tail->setNext(node);
 		node->setPrev(tail);
 		tail = node;

@@ -17,9 +17,9 @@ namespace Project1 {
 	public ref class Model : public System::Windows::Forms::Form
 	{
 	public:
-		Model(const List<std::string> input, const List<std::string> output)
+		Model(void)
 		{
-			InitializeComponent(input, output);
+			InitializeComponent();
 			//
 			//TODO: добавьте код конструктора
 			//
@@ -48,9 +48,8 @@ namespace Project1 {
 		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
 		/// содержимое этого метода с помощью редактора кода.
 		/// </summary>
-		void InitializeComponent(const List<std::string> input, const List<std::string> output)
+		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Model::typeid));
 			
 			this->SuspendLayout();
 			// 
