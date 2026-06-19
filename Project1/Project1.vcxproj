@@ -133,12 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classModel.cpp" />
-    <ClCompile Include="model.cpp" />
+    <ClCompile Include="model_1.cpp" />
     <ClCompile Include="MyMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="list.h" />
-    <ClInclude Include="model.h">
+    <ClInclude Include="model_1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyMenu.h">
@@ -146,8 +146,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="model.resx">
-      <DependentUpon>model.h</DependentUpon>
+    <EmbeddedResource Include="model_1.resx">
+      <DependentUpon>model_1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyMenu.resx">
       <DependentUpon>MyMenu.h</DependentUpon>

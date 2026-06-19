@@ -46,4 +46,25 @@ public:
 		node->setPrev(tail);
 		tail = node;
 	}
+
+	void push_front(T data) {
+		Node<T>* node = new Node(data);
+		head->setPrev(node);
+		node->setNext(head);
+		head = node;
+	}
+};
+
+template <typename T>
+class ListModel {
+private:
+	int leight;
+	Node <List<T>>* head;
+	Node <List<T>>* tail;
+public:
+	int getLeight() { return leight; }
+	void setLeight(int len) { leight = len; }
+
+
+
 };
