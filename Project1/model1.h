@@ -15,10 +15,10 @@ namespace Project1 {
 	/// <summary>
 	/// Summary for Model
 	/// </summary>
-	public ref class Model : public System::Windows::Forms::Form
+	public ref class Model1 : public System::Windows::Forms::Form
 	{
 	public:
-		Model(void)
+		Model1(void)
 		{
 			InitializeComponent();
 			//
@@ -30,7 +30,7 @@ namespace Project1 {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~Model()
+		~Model1()
 		{
 			if (components)
 			{
@@ -68,7 +68,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Model::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Model1::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -95,7 +95,7 @@ namespace Project1 {
 			this->label1->Size = System::Drawing::Size(458, 24);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Введите начальную скорость(v0) -";
-			this->label1->Click += gcnew System::EventHandler(this, &Model::label1_Click);
+			this->label1->Click += gcnew System::EventHandler(this, &Model1::label1_Click);
 			// 
 			// textBox1
 			// 
@@ -150,7 +150,7 @@ namespace Project1 {
 			this->label3->Size = System::Drawing::Size(514, 24);
 			this->label3->TabIndex = 4;
 			this->label3->Text = L"Введите начальное расположение(x0) -";
-			this->label3->Click += gcnew System::EventHandler(this, &Model::label3_Click);
+			this->label3->Click += gcnew System::EventHandler(this, &Model1::label3_Click);
 			// 
 			// textBox4
 			// 
@@ -161,7 +161,7 @@ namespace Project1 {
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(93, 31);
 			this->textBox4->TabIndex = 7;
-			this->textBox4->TextChanged += gcnew System::EventHandler(this, &Model::textBox4_TextChanged);
+			this->textBox4->TextChanged += gcnew System::EventHandler(this, &Model1::textBox4_TextChanged);
 			// 
 			// label4
 			// 
@@ -174,7 +174,7 @@ namespace Project1 {
 			this->label4->Size = System::Drawing::Size(402, 24);
 			this->label4->TabIndex = 6;
 			this->label4->Text = L"Введите время симуляции(с) -";
-			this->label4->Click += gcnew System::EventHandler(this, &Model::label4_Click);
+			this->label4->Click += gcnew System::EventHandler(this, &Model1::label4_Click);
 			// 
 			// label5
 			// 
@@ -187,7 +187,7 @@ namespace Project1 {
 			this->label5->Size = System::Drawing::Size(374, 24);
 			this->label5->TabIndex = 8;
 			this->label5->Text = L"Введите шаг симуляции(с) -";
-			this->label5->Click += gcnew System::EventHandler(this, &Model::label5_Click);
+			this->label5->Click += gcnew System::EventHandler(this, &Model1::label5_Click);
 			// 
 			// btn_1
 			// 
@@ -203,7 +203,7 @@ namespace Project1 {
 			this->btn_1->TabIndex = 10;
 			this->btn_1->Text = L"Запуск";
 			this->btn_1->UseVisualStyleBackColor = false;
-			this->btn_1->Click += gcnew System::EventHandler(this, &Model::btn_start_click);
+			this->btn_1->Click += gcnew System::EventHandler(this, &Model1::btn_start_click);
 			// 
 			// textBox5
 			// 
@@ -229,7 +229,7 @@ namespace Project1 {
 			this->btn_exit->TabIndex = 12;
 			this->btn_exit->Text = L"Вернуться";
 			this->btn_exit->UseVisualStyleBackColor = false;
-			this->btn_exit->Click += gcnew System::EventHandler(this, &Model::btn_exit_click);
+			this->btn_exit->Click += gcnew System::EventHandler(this, &Model1::btn_exit_click);
 			// 
 			// label6
 			// 
@@ -242,7 +242,7 @@ namespace Project1 {
 			this->label6->Size = System::Drawing::Size(420, 28);
 			this->label6->TabIndex = 13;
 			this->label6->Text = L"Равноускоренное движение";
-			this->label6->Click += gcnew System::EventHandler(this, &Model::label6_Click);
+			this->label6->Click += gcnew System::EventHandler(this, &Model1::label6_Click);
 			// 
 			// Model
 			// 

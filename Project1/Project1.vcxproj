@@ -136,7 +136,7 @@
     <ClCompile Include="model2.cpp" />
     <ClCompile Include="model3.cpp" />
     <ClCompile Include="model4.cpp" />
-    <ClCompile Include="model_1.cpp" />
+    <ClCompile Include="model1.cpp" />
     <ClCompile Include="Table.cpp" />
     <ClCompile Include="MyMenu.cpp" />
   </ItemGroup>
@@ -152,7 +152,7 @@
     <ClInclude Include="model4.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="model_1.h">
+    <ClInclude Include="model1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Table.h">
@@ -172,8 +172,8 @@
     <EmbeddedResource Include="model4.resx">
       <DependentUpon>model4.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="model_1.resx">
-      <DependentUpon>model_1.h</DependentUpon>
+    <EmbeddedResource Include="model1.resx">
+      <DependentUpon>model1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Table.resx">
       <DependentUpon>Table.h</DependentUpon>

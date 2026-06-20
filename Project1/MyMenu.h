@@ -1,4 +1,4 @@
-#include "model_1.h"
+#include "model1.h"
 #include "model2.h"
 #include "model3.h"
 #include "model4.h"
@@ -171,7 +171,7 @@ namespace Project1 {
 	}
 
 	private: System::Void btn_m1_click(System::Object^ sender, System::EventArgs^ e) {
-		Model^ newModel = gcnew Model();
+		Model1^ newModel = gcnew Model1();
 		newModel->Show();
 	}
 	private: System::Void btn_2_click(System::Object^ sender, System::EventArgs^ e) {

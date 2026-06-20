@@ -87,6 +87,7 @@ private:
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Table::typeid));
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->btn_exit = (gcnew System::Windows::Forms::Button());
 			this->btn_return = (gcnew System::Windows::Forms::Button());
@@ -158,6 +159,7 @@ private:
 			this->Font = (gcnew System::Drawing::Font(L"Lucida Console", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(5, 4, 5, 4);
 			this->Name = L"Table";
 			this->Text = L"Table";
