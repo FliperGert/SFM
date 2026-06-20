@@ -133,12 +133,29 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classModel.cpp" />
+    <ClCompile Include="model2.cpp" />
+    <ClCompile Include="model3.cpp" />
+    <ClCompile Include="model4.cpp" />
     <ClCompile Include="model_1.cpp" />
+    <ClCompile Include="Table.cpp" />
     <ClCompile Include="MyMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="classModel.h" />
     <ClInclude Include="list.h" />
+    <ClInclude Include="model2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="model3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="model4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="model_1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Table.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyMenu.h">
@@ -146,8 +163,20 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="model2.resx">
+      <DependentUpon>model2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="model3.resx">
+      <DependentUpon>model3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="model4.resx">
+      <DependentUpon>model4.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="model_1.resx">
       <DependentUpon>model_1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table.resx">
+      <DependentUpon>Table.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyMenu.resx">
       <DependentUpon>MyMenu.h</DependentUpon>

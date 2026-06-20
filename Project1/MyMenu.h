@@ -1,6 +1,7 @@
 #include "model_1.h"
-#include "list.h"
-#include <string>
+#include "model2.h"
+#include "model3.h"
+#include "model4.h"
 
 namespace Project1 {
 
@@ -109,6 +110,7 @@ namespace Project1 {
 			this->btn_m2->BackColor = System::Drawing::Color::DimGray;
 			this->btn_m2->Name = L"btn_m2";
 			this->btn_m2->UseVisualStyleBackColor = false;
+			this->btn_m2->Click += gcnew System::EventHandler(this, &MyMenu::btn_2_click);
 			// 
 			// btn_m3
 			// 
@@ -116,6 +118,7 @@ namespace Project1 {
 			this->btn_m3->BackColor = System::Drawing::Color::DimGray;
 			this->btn_m3->Name = L"btn_m3";
 			this->btn_m3->UseVisualStyleBackColor = false;
+			this->btn_m3->Click += gcnew System::EventHandler(this, &MyMenu::btn_m3_Click);
 			// 
 			// btn_m4
 			// 
@@ -123,6 +126,7 @@ namespace Project1 {
 			this->btn_m4->BackColor = System::Drawing::Color::DimGray;
 			this->btn_m4->Name = L"btn_m4";
 			this->btn_m4->UseVisualStyleBackColor = false;
+			this->btn_m4->Click += gcnew System::EventHandler(this, &MyMenu::btn_m4_Click);
 			// 
 			// btn_spr
 			// 
@@ -167,9 +171,19 @@ namespace Project1 {
 	}
 
 	private: System::Void btn_m1_click(System::Object^ sender, System::EventArgs^ e) {
-
 		Model^ newModel = gcnew Model();
-
+		newModel->Show();
+	}
+	private: System::Void btn_2_click(System::Object^ sender, System::EventArgs^ e) {
+		Model2^ newModel = gcnew Model2();
+		newModel->Show();
+	}
+	private: System::Void btn_m3_Click(System::Object^ sender, System::EventArgs^ e) {
+		Model3^ newModel = gcnew Model3();
+		newModel->Show();
+	}
+	private: System::Void btn_m4_Click(System::Object^ sender, System::EventArgs^ e) {
+		Model4^ newModel = gcnew Model4();
 		newModel->Show();
 	}
 };
