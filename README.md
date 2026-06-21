@@ -202,5 +202,5 @@ ListModel
 ---
 
 <div align="center">
-  <sub>C++ · Windows Forms · C++/CLI · ПГНИУ · ИТ-11/12 · 2026</sub>
+  <sub>C++ · Windows Forms · C++/CLI · 2026</sub>
 </div>
