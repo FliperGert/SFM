@@ -97,7 +97,8 @@ private:
 			// 
 			// dataGridView1
 			// 
-			this->dataGridView1->AllowUserToOrderColumns = true;
+			this->dataGridView1->AllowUserToAddRows = false;
+			this->dataGridView1->AllowUserToDeleteRows = false;
 			this->dataGridView1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
@@ -107,6 +108,7 @@ private:
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(26, 21);
 			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->ReadOnly = true;
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
 			this->dataGridView1->Size = System::Drawing::Size(659, 431);
@@ -248,7 +250,7 @@ private:
 					if (i < this->dataGridView1->Columns->Count - 1) sw->Write(";");
 				}
 				sw->WriteLine();
-				for (int i = 0; i < this->dataGridView1->Rows->Count - 1; i++) {
+				for (int i = 0; i < this->dataGridView1->Rows->Count; i++) {
 					for (int j = 0; j < this->dataGridView1->Columns->Count; j++) {
 						sw->Write(this->dataGridView1->Rows[i]->Cells[j]->Value);
 						if (j < this->dataGridView1->Columns->Count - 1) sw->Write(";");

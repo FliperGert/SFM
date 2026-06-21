@@ -309,7 +309,22 @@ namespace Project1 {
 				MessageBox::Show("ќшибка: врем€ симул€ции и шаг симул€ции должны быть положительными.");
 				return;
 			}
-
+			if (input_values[0] <= 0 ) {
+				MessageBox::Show("ќшибка: площадь поперечного сечени€ должна быть положительной.");
+				return;
+			}
+			if (input_values[1] <= 0 ) {
+				MessageBox::Show("ќшибка: коэффициент сопротивлени€ должен быть положительным.");
+				return;
+			}
+			if (input_values[2] <= 0) {
+				MessageBox::Show("ќшибка: высота падени€ должна быть положительной.");
+				return;
+			}
+			if (input_values[3] <= 0 ) {
+				MessageBox::Show("ќшибка: масса должна быть положительной.");
+				return;
+			}
 			ModelProcess_4 model(input_values);
 			std::shared_ptr<ModelProcess_4> point_model = std::make_shared<ModelProcess_4>(model);
 			point_model->full();
